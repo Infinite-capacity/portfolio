@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!--The order of the stylesheets matters! The second sheet will overwrite the first.-->
+    <link rel="stylesheet" href="./resources/css/reset.css">
+    <link rel="stylesheet" href="./resources/css/style.css">
+    <!--This stylesheet is needed for the hamburger menu on the navbar-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--The meta tag is needed for proper scaling on mobile-->
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title></title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="index.html"><img src="./resources/images/logo.png" alt="Home"></a>
+        </div>
+        <div class="links">
+          <ul>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+          </ul>
+        </div>
+        <div class="topnav">
+          <div id="myLinks">
+            <a href="">Link 1</a>
+            <a href="">Link 2</a>
+            <a href="">Link 3</a>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!--Main banner-->
+      <div class="banner">
+        <div class="banner-text">
+          <h1>Banner Title</h1>
+          <h3>This banner needs a font and background image.</h3>
+        </div>
+      </div>
+      <!--Place main content here-->
+        <!--Sample Text-->
+      <div class="sample-text">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+      </div>
+      <div class="sample-text">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+      </div>
+        <!--Image Gallery-->
+      <div class="gallery">
+        <h2>Gallery</h2>
+        <div class="image-card">
+          <h3>image 1</h3>
+        </div>
+        <div class="image-card">
+          <h3>image 2</h3>
+        </div>
+        <div class="image-card">
+          <h3>image 3</h3>
+        </div>
+        <div class="image-card">
+          <h3>image 4</h3>
+        </div>
+        <div class="image-card">
+          <h3>image 5</h3>
+        </div>
+        <div class="image-card">
+          <h3>image 6</h3>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="copywrite">
+        <h4>Copywrite *insert business here *year</h4>
+      </div>
+    </footer>
+    <!--Javascript for nav bar hamburger menu-->
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
+  </body>
+</html>

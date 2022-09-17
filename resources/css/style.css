@@ -1,0 +1,260 @@
+/*Universal styles*/
+  body {
+    background-color: #040F0F;
+  }
+
+  main {
+    margin-top: 85px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color: hsla(120, 100%, 99%, .8);
+  }
+
+
+/*Nav*/
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsla(180, 58%, 4%, .8);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    border-bottom: 2px solid white;
+    z-index: 5;
+  }
+
+  .navbar .logo {
+    display: flex;
+    width: 15%;
+  }
+
+  .navbar .logo img {
+    width: auto;
+    height: 80px;
+  }
+
+  .links {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    height: 80px;
+  }
+
+  .navbar .links ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .navbar .links a {
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 7px;
+    background-color: hsla(180, 13%, 20%, .7);
+  }
+
+  .navbar .links a:hover {
+    color: white;
+    background-color: hsla(180, 13%, 20%, 1)
+  }
+
+  .navbar .links a:visited {
+    color: #white;
+  }
+
+  .navbar .links a:active {
+    color: #white;
+  }
+
+/*hamburger menu*/
+
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top:0;
+    z-index: -1;
+  }
+
+  .topnav #myLinks {
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 85px;
+    background-color: #040F0F;
+    width: 100%;
+    text-align: center;
+  }
+
+  .topnav a {
+    color: #FCFFFC;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  .topnav a.icon {
+    display: none;
+    color: white;
+    height: 54px;
+    font-size: 40px;
+    vertical-align: middle;
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+
+  .topnav a:hover {
+    color: white;
+  }
+
+  .topnav a:active {
+    color: #248232;
+  }
+
+  .active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  i.fa,.fa-bars {
+    display: none;
+  }
+
+@media only screen and (max-width: 888px) {
+  .links {
+    display: none;
+  }
+  .topnav a.icon {
+    display: block;
+    z-index: 6;
+  }
+
+  i.fa,.fa-bars {
+    display: block;
+  }
+  .topnav {
+    z-index: 6;
+  }
+
+  .navbar {
+    background-color: #040F0F;
+  }
+}
+/*banner*/
+  .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 90%;
+    max-width: 1200px;
+    background-image: url("../images/banner-background.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .banner-text {
+    color: hsla(120, 100%, 99%, .8);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 600px;
+    background-color: hsla(180, 58%, 4%,.7);
+    border-radius: 15px;
+    border: 2px solid hsla(120, 100%, 99%, .8);
+    padding: 30px 0;
+  }
+
+  .banner-text h1, h3 {
+    text-align: center;
+    color: hsla(120, 100%, 99%, .8);
+  }
+
+  .banner-text h1 {
+    width: 100%;
+    font-size: 40px;
+    margin-bottom: 25px;
+  }
+
+  .banner-text h3 {
+    font-size: 22px;
+    max-width: 500px;
+  }
+
+/*Main text*/
+  .sample-text {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px 0;
+    font-size: 16px;
+  }
+
+/*gallery*/
+  .gallery {
+    margin-top: 25px;
+    margin-bottom: 100px;
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .gallery h2 {
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    line-height: 100px;
+  }
+
+  .image-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 260px;
+    width: 300px;
+    margin: 20px 15px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../images/sample.jpg");
+  }
+
+  .image-card h3 {
+    background-color: #040F0F;
+    width: 100%;
+    line-height: 30px;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 10px;
+    margin: 0;
+    color: hsla(120, 100%, 99%, .7);
+  }
+
+
+
+/*footer*/
+  footer {
+    margin-top: 30px;
+    color: white;
+    background-color: #040F0F;
+    height: 50px;
+    width: 100%;
+    text-align: left;
+  }
+
+  footer .copywrite {
+    margin-left: 20px;
+    line-height: 50px;
+    font-size: 14px;
+  }
